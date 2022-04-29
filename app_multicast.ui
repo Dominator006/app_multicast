@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>App_multicast</class>
+ <widget class="QMainWindow" name="App_multicast">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1071</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App_multicast</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <widget class="QLabel" name="image">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>200</y>
+         <width>331</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>picture</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>20</y>
+         <width>210</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="Label_1">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Pseudo :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pseudo"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>540</y>
+         <width>1021</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>message :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="message"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="send_msg">
+          <property name="text">
+           <string>send message</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="send_img">
+          <property name="text">
+           <string>send image</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTextBrowser" name="display_msg">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>651</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::TextBrowserInteraction</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1071</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>send_msg</sender>
+   <signal>clicked()</signal>
+   <receiver>App_multicast</receiver>
+   <slot>boutonEnvoyer_msg_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>940</x>
+     <y>618</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1086</x>
+     <y>547</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>send_img</sender>
+   <signal>clicked()</signal>
+   <receiver>App_multicast</receiver>
+   <slot>boutonEnvoyer_img_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1000</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1075</x>
+     <y>628</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>boutonEnvoyer_msg_clicked()</slot>
+  <slot>boutonEnvoyer_img_Clicked()</slot>
+ </slots>
+</ui>
