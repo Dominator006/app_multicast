@@ -15,7 +15,7 @@ Follow the steps in terminal :
     - Open your terminal (ALT+TAB+T)
     - write down : ./Layoutapp
     
-    ![test_app](https://user-images.githubusercontent.com/91950612/166007282-dbd87a07-2a28-4b0d-9abf-a07f213b94df.png)
+  ![test_app](https://user-images.githubusercontent.com/91950612/166007282-dbd87a07-2a28-4b0d-9abf-a07f213b94df.png)
 
 
 
